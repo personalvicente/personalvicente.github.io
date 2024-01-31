@@ -1,1 +1,127 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 300px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-box img {
+    border-radius: 50%;
+}
+
+.info-content {
+    margin-top: 10px;
+}
+
+.info_more-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar-info_more {
+    display: none;
+    margin-top: 20px;
+}
+
+.sidebar-info_more .separator {
+    height: 1px;
+    background-color: #555;
+    margin: 10px 0;
+}
+
+/* Estilos de la lista de contactos */
+.contacts-list,
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item,
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-title,
+.social-link {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-right: 20px;
+}
+
+/* Estilos de la sección "Sobre mí" */
+.about {
+    display: none;
+}
+
+.about.active {
+    display: block;
+}
+
+.article-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    color: #555;
+}
+
+/* Estilos del botón de navegación */
+.navbar-link {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
