@@ -1,8 +1,187 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>My first header</h1>
-    <p>Paragraph.</p>
-  </body>
-    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./assets/images/my-avatar.png" alt="Richard Hanrick" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Vicente San Martín">Vicente San Martín</h1>
+                    <p class="title">Estudiante ingeniería de Software</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:vjsm@uc.cl" class="contact-link">vjsm@uc.cl</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="">24-09-2003</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Santiago De Chile</address>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/sanmartinvicente6/" class="social-link">
+                            <img src="./assets/icons/instagram16.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/ignacio-benjam%C3%ADn-garrido-bobadilla-32a4b9159/"
+                            class="social-link">
+                            <img src="./assets/icons/linkedin16.png" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/personalvicente" class="social-link">
+                            <img src="./assets/icons/github16.png" alt="GitHub">
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://t.me/vicentesanmartin" class="social-link">
+                            <img src="./assets/icons/spotify16.png" alt="Telegram">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <!-- main-content -->
+
+        <div class="main-content">
+
+            <!-- NAVBAR -->
+
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Proyectos</button>
+                    </li>
+                    <li class="navbar-item">
+                        <a
+                            href="https://uccl0-my.sharepoint.com/:f:/g/personal/ibgarrido_uc_cl/EsOUTlOZKVdEjDc_Lw2SsYoB5rgTeUPANbrDsDcTEX6ZsQ?e=ZixCei">
+                            <button class="navbar-link" data-nav-link>Apuntes LICD</button>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a
+                            href="https://uccl0-my.sharepoint.com/:f:/g/personal/ibgarrido_uc_cl/EmJ0EWM-hjNEi3nbx81kFlQB5fyOd0BRJlTk_HcU78_Enw?e=OkSada">
+                            <button class="navbar-link" data-nav-link>Apuntes math/CS</button>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a
+                            href="https://uccl0-my.sharepoint.com/:f:/g/personal/ibgarrido_uc_cl/EpvyAygpqNNCppBhJ33A3sIBNMQzT70ryP-ZA6lZNjdw-g?e=ilpzCf">
+                            <button class="navbar-link" data-nav-link>Apuntes IMO</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ABOUT -->
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">Sobre mí</h2>
+                </header>
+                <section class="about-text">
+                    <p>Mi nombre es Ignacio, y soy estudiante de la UC.</p>
+                    <p>Mis principales hobbies son desarrollar proyectos aleatorios que se me ocurren, hacer calistenia y
+                        aprender de cocina.</p>
+                    <h2>Temas de interés</h2>
+                    <ul>
+                        <li>- Data Science</li>
+                        <li>- Maths</li>
+                        <li>- Cualquier área en la que se pueda aplicar Data Science</li>
+                    </ul>
+                    <h2>Apuntes</h2>
+                    <p>A lo largo del tiempo he ido recopilando apuntes de distintos temas, los cuales los he organizado y
+                        compartido a la comunidad UC. Puedes acceder a ellos en los enlaces del encabezado.</p>
+                </section>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- custom js link -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- ionicon link (En Desuso por mi) -->
+    <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
